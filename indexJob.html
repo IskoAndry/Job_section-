@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <!--файл для полключения ПРИ НЕОБХОДИМОСТИ-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Файл для подключения стлей к div с классом class="col-8 col-xs-8" -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--файл НЕ для полключения-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <!--файл для полключения-->
+        <div class="col-8 col-xs-8">
+          <div class="container__job">
+            <div class="container__card">
+              <div class="d-card">
+                <h3 class="d-card__title">
+                  <a class="title__span" href="index.html" target="_blank"
+                    >вакансии</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="container__vacancies">
+              <div class="website__blok">
+                <div class="website__blok_section">
+                  <div class="website__blok_item">
+                    <a href="https://daggossluzhba.ru/board" target="_blank"
+                      >Управление государственной службой в РД</a
+                    >
+                  </div>
+                  <div class="website__blok_item">
+                    <a
+                      href="https://dagmintrud.ru/ministry/departments"
+                      target="_blank"
+                      >Центры занятости населения муниципальных образований
+                      РД</a
+                    >
+                  </div>
+                </div>
+                <div class="website__blok_section">
+                  <div class="website__blok_item">
+                    <a href="http://uspehrd.ru" target="_blank"
+                      >РЕСПУБЛИКАНСКИЙ МОЛОДЁЖНЫЙ ЦЕНТР ЗАНЯТОСТИ «УСПЕХ»</a
+                    >
+                  </div>
+                  <div class="website__blok_item">
+                    <a href="https://kariera.znanierussia.ru" target="_blank">
+                      ООО Знание. Карьера</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="vacancies__blok">
+                <div class="vacancies__blok_title">
+                  <p class="title">Актуальные вакансии</p>
+                </div>
+                <div class="search__job_card">
+                  <div class="search__cadrjob">
+                    <a
+                      class="title__link_job"
+                      href="https://gossluzhba.gov.ru/vacancy"
+                      target="_blank"
+                      >Вакансии государственной гражданской службы</a
+                    >
+                  </div>
+                  <div class="search__cadrjob">
+                    <a class="title__link_job" href="https://mfcrd.ru/vakansii/" target="_blank"
+                      >Вакансии Многофункционального центра предоставления
+                      государственных и муниципальных услуг в РД</a
+                    >
+                  </div>
+                  <div class="search__cadrjob">
+                    <a class="title__link_job" href="https://centr-zanyatosti-naseleniya.ru/tszn-mahachkala/birzha-truda-v-mahachkale" target="_blank"
+                      >Вакансии Центра занятости населения города Махачкала</a
+                    >
+                  </div>
+                  <div class="search__cadrjob">
+                    <a
+                      class="title__link_job"
+                      href="https://mkala.rpa-mu.ru/Media/mkala/sveden/stipendii/4715_10.08.2023.pdf"
+                      target="_blank"
+                      >Вакансии на первичные воинские должности военных
+                      следователей СО СК РФ</a
+                    >
+                  </div>
+                </div>
+
+                <!--Блок для API вакансий-->
+                <div class="vacancies__blok_api"></div>
+              </div>
+
+              <div class="network__blok">
+                <p class="network__p">Вакансии в&nbsp;социальной сети&nbsp;:</p>
+                <div class="network__blok__info">
+                  <div class="network__info">
+                    <p class="network__p_item">
+                      ВКонтакте :
+                      <a
+                        class="network__info_item"
+                        href="https://vk.com/id764023895"
+                        target="_blank"
+                        ><strong>https://vk.com/id764023895</strong></a
+                      >
+                    </p>
+                    <p class="network__p_item">
+                      Telegram :
+                      <a
+                        class="network__info_item"
+                        href="https://t.me/rpa_assistJob"
+                        target="_blank"
+                        ><strong>https://t.me/rpa_assistJob</strong></a
+                      >
+                    </p>
+                  </div>
+                  <div class="network">
+                    <img
+                      class="network__img"
+                      src="img/qr_tmp.jpg"
+                      alt="телеграмм"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="article article__bluebg article__second">
+              <h3 class="article__title">
+                Свяжись с&nbsp;отделом трудоустройства!
+              </h3>
+              <div class="form">
+                <form
+                  id="form"
+                  class="form__body"
+                  action="sendmail.php"
+                  method="POST"
+                >
+                  <div class="form__item">
+                    <input
+                      id="formName"
+                      type="text"
+                      name="name"
+                      class="form__input _req"
+                      placeholder="Имя"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <input
+                      id="formEmail"
+                      type="text"
+                      name="email"
+                      class="form__input _req _email"
+                      placeholder="E-mail"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <textarea
+                      id="formMessage"
+                      name="message"
+                      class="form__input _req"
+                      placeholder="Ваше сообщение, номер телефона"
+                    ></textarea>
+                  </div>
+                  <div class="form__item">
+                    <div class="checkbox">
+                      <input
+                        id="formAgreement"
+                        type="checkbox"
+                        class="checkbox__input"
+                        name="agreement"
+                      />
+                      <label for="formAgreement" class="checkbox__label _req">
+                        <span
+                          >Я&nbsp;даю&nbsp;своё согласие на&nbsp;обработку
+                          персональных данных в&nbsp;соответствии
+                          с&nbsp;ФЗ&nbsp;№&nbsp;152-ФЗ
+                          "О&nbsp;персональных&nbsp;данных"</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <button class="form__button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--блок НЕ для размещения-->
+        <div class="col-4 col-xs-4">ПОСТОЯННЫЙ__БЛОК</div>
+      </div>
+    </div>
+
+    <!--файл для полключения-->
+    <script src="scriptForm.js"></script>
+  </body>
+</html>

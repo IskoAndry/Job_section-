@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <!--файл для полключения ПРИ НЕОБХОДИМОСТИ-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Файл для подключения стлей к div с классом class="col-8 col-xs-8" -->
+    <link rel="stylesheet" href="style.css"/>
+    
+    <!--файл НЕ для полключения-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <!--файл для полключения-->
+        <div class="col-8 col-xs-8">
+          <div class="container__job">
+            <div class="container__card">
+              <div class="d-card">
+                <h3 class="d-card__title">
+                  <a class="title__span" href="indexInfo.html" target="_blank"
+                    >Информация о&nbsp;трудоустройстве выпускников</a>
+                </h3>
+              </div>
+              <div class="d-card">
+                <h3 class="d-card__title">
+                  <a class="title__span" href="indexDoc.html" target="_blank"
+                    >документы</a>
+                </h3>
+              </div>
+              <div class="d-card facult">
+                <h3 class="d-card__title">
+                  <a
+                    class="title__span item"
+                    href="https://rpa-mu.ru/ob-akademii/centr-sodejstviya-trudoustrojstvu-vypusknikov/fakultetus"
+                    title="Факультетус"
+                    target="_blank"
+                    >Факультетус</a>
+                </h3>
+              </div>
+              <div class="d-card">
+                <h3 class="d-card__title">
+                  <a class="title__span" href="indexJob.html" target="_blank"
+                    >вакансии</a>
+                </h3>
+              </div>
+              <div class="d-card">
+                <h3 class="d-card__title">
+                  <a class="title__span" href="indexSearch.html" target="_blank"
+                    >сайты поиска работы</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="container__recommend">
+              <div class="recommend__blok">
+                <h3 class="recommend__title">
+                  Рекомендации и советы по поиску работы
+                </h3>
+                <ul class="recommend__item">
+                  <li class="recommend__item_item">
+                    <a
+                      href="../advicJob/Эффективные способы поиска работы.docx"
+                      target="_blank"
+                      ><img
+                        class="icon_img"
+                        src="img/icons8-документ-50.png"
+                        alt="icon"
+                      />Эффективные способы поиска работы</a>
+                  </li>
+                  <li class="recommend__item_item">
+                    <a
+                      href="https://mkala.rpa-mu.ru/Media/mkala/sveden/stipendii/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%BE%D1%80_%D0%9E%D0%9E%D0%92%D0%9E.pdf"
+                      target="_blank"
+                      ><img
+                        class="icon_img"
+                        src="img/icons8-навигация-48.png"
+                        alt="icon"
+                      />Навигатор по инструментам и методам поиска работы</a>
+                  </li>
+                  <li class="recommend__item_item recommend__blok_float">
+                    <a
+                      href="../advicJob/правила написания сопроводительного письма.docx"
+                      target="_blank"
+                      ><img
+                        class="icon_img"
+                        src="img/icons8-письмо-50.png"
+                        alt="icon"
+                      />Правила написания мотивационного письма</a>
+                  </li>
+                  <li class="recommend__item_item">
+                    <a
+                      href="../advicJob/правила составления резюме.docx"
+                      target="_blank"
+                      ><img
+                        class="icon_img"
+                        src="img/icons8-резюме-50.png"
+                        alt="icon"
+                      />Правила составления резюме</a>
+                  </li>
+                  <li class="recommend__item_item">
+                    <a
+                      href="../advicJob/Собеседование с работодателем.docx"
+                      target="_blank"
+                      ><img
+                        class="icon_img"
+                        src="img/icons8-интервью-64.png"
+                        alt="icon"
+                      />Собеседование с работодателем</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="recommend__network">
+                <h3 class="network__title">Ассистент JOB</h3>
+                <img
+                  class="network__img"
+                  src="img/qr_tmp.jpg"
+                  alt="телеграмм"
+                />
+              </div>
+            </div>
+
+            <div class="article article__bluebg article__second">
+              <h3 class="article__title">
+                Свяжись с&nbsp;отделом трудоустройства!
+              </h3>
+              <div class="form">
+                <form id="form" class="form__body" action="sendmail.php" method="POST">
+                  <div class="form__item">
+                    <input id="formName" type="text" name="name" class="form__input _req" placeholder="Имя"/>
+                  </div>
+                  <div class="form__item">
+                    <input id="formEmail" type="text" name="email" class="form__input _req _email" placeholder="E-mail"/>
+                  </div>
+                  <div class="form__item">
+                    <textarea id="formMessage" name="message" class="form__input _req" placeholder="Ваше сообщение, номер телефона"></textarea>
+                  </div>
+                  <div class="form__item">
+                    <div class="checkbox">
+                      <input id="formAgreement" type="checkbox" class="checkbox__input" name="agreement"/>
+                        <label for="formAgreement" class="checkbox__label _req">
+                        <span>Я&nbsp;даю&nbsp;своё согласие на&nbsp;обработку персональных данных в&nbsp;соответствии
+                          с&nbsp;ФЗ&nbsp;№&nbsp;152-ФЗ "О&nbsp;персональных&nbsp;данных"</span>
+                        </label>
+                    </div>
+                  </div>
+                  <button class="form__button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--блок НЕ для размещения-->
+        <div class="col-4 col-xs-4">ПОСТОЯННЫЙ__БЛОК</div>
+      </div>
+    </div>
+    
+    <!--файл для полключения-->
+    <script src="scriptForm.js"></script>
+  </body>
+</html>

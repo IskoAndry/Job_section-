@@ -1,0 +1,33 @@
+
+элементы для размещения на странице
+Об институте -> Органы управления -> Отдел практической подготовки и трудоустройства -> 
+
+На странице
+ 
+https://mkala.rpa-mu.ru/trudoustrojstvo-vypusknikov    в блоке   <div class="row">
+
+заменить <div class="col-8 col-xs-8"> на аналогичный блок <div class="col-8 col-xs-8"> из файла index.html
+
+подключив 
+
+// при необходимости файл normalize.css
+
+	<link rel="stylesheet" href="css/normalize.css" />
+
+
+  	_Файлы для подключения
+
+//Файл для подключения стлей к div с классом class="col-8 col-xs-8" (файл прилагается   style.css)
+
+	<link rel="stylesheet" href="style.css" />
+
+//Файлы для подключения отправки сообщения на эл.почту  (файл прилагается  scriptForm.js)  +  
+//	+ прилагается (файл) sendmail.php  +  файлы в папке PHPMailer-master
+
+	<script src="scriptForm.js"></script>
+
+//файлы в папках (3) для наполнения сайта = img  +  docJob  +  advicJob
+
+// файлы для блока <div class="col-8 col-xs-8"> = indexDoc.html  +  indexInfo.html  +  indexJob.html  +  indexSearch.html  разделы для файла index.html , 	
+// где в блоке <div class="row"> элементы блоков (разделы для файла index.html) <div class="col-8 col-xs-8"> ,  
+// а <div class="col-4 col-xs-4">ПОСТОЯННЫЙ__БЛОК</div> переиспользовать со старницы  https://mkala.rpa-mu.ru/trudoustrojstvo-vypusknikov
